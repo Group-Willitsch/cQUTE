@@ -1,5 +1,57 @@
-# Object file
-*.o
+# List of untracked files to ignore
 
-# Ada Library Information
-*.ali
+# temporary files
+~*
+*~
+*~*
+*$* # anything with dollar in filename
+
+# heavy files that should never be synched with git!
+*.png
+*.jpg
+*.pdf
+*.dat
+*.csv
+*.xls
+*.h5 # common data structure file
+# !./Simulations/Instruction_fortran.pdf # example: include Fortran instructions explicitly
+
+# exec and compiled code
+*.exe 
+*.o
+*.for
+*.so
+*.obj
+*.dll
+*.lib
+*.a
+*.out
+
+# system files 
+*.db 
+**/.DS_Store
+
+# matlab
+*.fig 
+*.asv # autosave files
+*.prj # project files
+*.mat # variables files
+
+
+# python
+__pycache__
+**/.idea # folder for pycharm setting
+*.npy # numpy data files
+.ipynb_checkpoints # Jupiter logs
+~env~ # this removed any env / venv stuff but can kick out even more files, watch out
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Spyder project settings
+.spyderproject
+.spyproject
